@@ -1,0 +1,186 @@
+/* Estilo avançado para o site de produtos de limpeza */
+
+/* Reseta estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #f0f4f7, #e8eff1);
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background: #2a9d8f;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+section {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+section#home {
+    background: url('Captura\ de\ Tela\ \(21\).png') no-repeat center center/cover;
+    color: #fff;
+    padding: 5rem 1rem;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+section#home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+section#home p {
+    font-size: 1.25rem;
+}
+
+section#produtos {
+    background: #f8f9fa;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 280px;
+    text-align: center;
+}
+
+.produto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.produto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.produto p {
+    font-size: 1.2rem;
+    color: #2a9d8f;
+    font-weight: bold;
+}
+
+section#contato {
+    background: #e0f7fa;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #2a9d8f;
+    outline: none;
+}
+
+form button {
+    background: #2a9d8f;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background: #21867a;
+}
+
+footer {
+    background: #2a9d8f;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
